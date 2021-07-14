@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@500&display=swap")
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #562EFF;
+    
+}
+
+/* Enjoy This Match */
+
+.copa-america{
+    display: flex;
+    font-size: 25px;
+    background-color: rgb(50, 50, 243);
+    text-align: center;
+}
+.copa-america h1,h3{
+    color: white;
+}
+.copa-america h3{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(223, 214, 214);
+    background-color: rgb(240, 128, 184);
+    border-radius: 10px;
+    transition: width 8s, easy 1s , height 8s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3:hover{
+    height: 150px;
+    width: 150px;
+}
+.copa-america img{
+    width: 500px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+/* Football players */
+
+.players{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 20 20 40 rgb(226, 224, 224);
+    border-radius: 10px;
+   
+    margin-left: 60px;
+    margin-right: 100px;
+    margin-top: 100px;
+
+}
+.player img{
+    width:250px;
+    height:200px;
+}
+.player{
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 20px;
+    border: 2px solid rgb(206, 202, 202);
+    border-radius: 10px;
+}
+/* see copa america final in youtube */
+
+.showing-live{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding:80px;
+    margin-bottom: 10px;
+}
+.showing-live a{
+    text-decoration: none;
+    background-color: rgb(245, 104, 151);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    color: white;
+  
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 170px;
+    padding-bottom: 63px;
+}
+.logo_football img{
+    width: 227.82px;
+    height: 67.42px;
+}
+/* Media queries */
+@media only screen and (maax-width:688px){
+.copa-america, .players{
+    width: 100%;
+.players{
+grid-template-columns: ;
+
