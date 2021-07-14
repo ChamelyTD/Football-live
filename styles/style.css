@@ -9,27 +9,33 @@ body{
 
 .copa-america{
     display: flex;
-    font-size: 25px;
-    background-color: rgb(50, 50, 243);
+    background-color:rgb(53, 53, 243);
     text-align: center;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 15px;
+}
+.copa-america h1{
+    font-size: 60px;
 }
 .copa-america h1,h3{
     color: white;
 }
 .copa-america h3{
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     border: 2px solid rgb(223, 214, 214);
     background-color: rgb(240, 128, 184);
     border-radius: 10px;
-    transition: width 8s, easy 1s , height 8s;
+    transition: width 5s, height 5s;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    font-size: 20px;
 }
 h3:hover{
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
 }
 .copa-america img{
     width: 500px;
@@ -65,38 +71,36 @@ h3:hover{
 }
 /* see copa america final in youtube */
 
-.showing-live{
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding:80px;
-    margin-bottom: 10px;
-}
-.showing-live a{
-    text-decoration: none;
-    background-color: rgb(245, 104, 151);
-    border-radius: 5px;
-    margin-bottom: 25px;
-    padding: 10px 10px;
-    color: white;
-  
-}
-
-.logo{
+.video-player, .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 170px;
     padding-bottom: 63px;
 }
-.logo_football img{
-    width: 227.82px;
-    height: 67.42px;
+.video-player h2{
+    font-size: 50px;
+    background-color:rgb(53, 53, 243);
+    color: white;
 }
-/* Media queries */
-@media only screen and (maax-width:688px){
-.copa-america, .players{
-    width: 100%;
-.players{
-grid-template-columns: ;
+.logo-football img{
+width: 227.82px;
+height: 67.42px;
+}
 
+/* Media queries */
+@media only screen and (max-width:688px){
+.players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.copa-america{
+    display:flex;
+    flex-direction: column;
+}
+}
+@media only screen and (min-width:688px and /max-width:992px){
+    .player .copa-america{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
